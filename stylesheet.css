@@ -14,11 +14,17 @@ body {
     overflow: hidden;
     width: 100vw;
 }
- iframe {
+
+ iframe { 
     width: 100px;
     height: 50px;
-    margin: 0 auto;
+    margin: 25 auto;
     background-color: #777;
+    position: absolute;
+    top: 0; right: 0; /* confuse it i guess */
+    bottom: 0; left: 0;
+    margin: auto;
+    
 }
 h1#alert{
     font-family: 'Indie Flower', cursive;
@@ -35,12 +41,15 @@ h1#alert{
         font-style: italic;
         font-weight: bold;
         color: white;
-        text-align: center; 
+        ; 
 
       }
 .text-box {
-    margin-left: 44vw;
-	 margin-top: 42vh;
+    position: absolute;
+    top: 0; right: 0; /* confuse it i guess */
+    bottom: 0; left: 0;
+    margin: auto;
+    
 }
 
 .btn:link,
@@ -52,6 +61,10 @@ h1#alert{
     border-radius: 100px;
     transition: all .2s;
     position: absolute;
+   
+    margin-left:85%;
+    margin-top: 35%;
+    
 }
 
 .btn:hover {
@@ -309,6 +322,6 @@ nav .menu-item:nth-of-type(4):hover ~ #sub-menu-container #sub-menu-holder {
 }
 
 .box {
-    margin: 0 0 3em 0;
+    margin: 0 0 0 0;
 }
 
